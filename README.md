@@ -53,6 +53,17 @@
 
     Install the dev dependencies for linters run npm install.
 
+### Key Features <a name="key-features"></a>
+
+- **Use calculator**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### 🔭 Future Features <a name="future-features"></a>
+
+- [ ] ***
+- [ ] ***
+
 ### Prerequisites
 
 In order to run this project you need:
