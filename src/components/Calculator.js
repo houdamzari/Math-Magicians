@@ -1,21 +1,18 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import Buttons from './Buttons';
 import calculate from '../logic/calculate';
 
-class Calculator extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = { total: 0, next: null, operation: null };
-  }
+const Calculator = () => {
+  const details = { total: 0, next: null, operation: null };
+  const [state, setState] = useState(details);
 
-  buttonClicked = (e) => {
+  const buttonClicked = (e) => {
     const buttonName = e.target.innerText;
-    const result = calculate(this.state, buttonName);
-    this.setState(result);
+    const result = calculate(state, buttonName);
+    setState(result);
   };
 
-  render() {
-    return <Buttons buttonClicked={this.buttonClicked} state={this.state} />;
-  }
-}
+  return <Buttons buttonClicked={buttonClicked} state={state} />;
+};
+
 export default Calculator;
