@@ -131,8 +131,6 @@ If you like this project star it
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-
+This project is [MIT](https://github.com/houdamzari/Math-Magicians/blob/feature/events/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -24,7 +24,7 @@ class Buttons extends React.PureComponent {
           <button type="button" onClick={buttonClicked}>
             %
           </button>
-          <button type="button" className="mathsSymbol">
+          <button type="button" className="mathsSymbol" onClick={buttonClicked}>
             &#247;
           </button>
           <button type="button" onClick={buttonClicked}>
