@@ -42,8 +42,7 @@ const App = () => (
         )}
       />
     </Routes>
-    {/* <NavBar /> */}
-    {/* <Calculator /> */}
+
   </>
 );
 
