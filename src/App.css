@@ -6,6 +6,11 @@ body {
   align-items: center;
 }
 
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
 .answer {
   display: flex;
   align-items: center;
@@ -55,4 +60,56 @@ button:active {
 .results {
   background-color: #858694;
   padding: 10px;
+}
+
+.calculator {
+  width: 400px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: relative;
+  top: 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.calculator__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home__paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  left: 20%;
+  top: 20%;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.quote__paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  left: 20%;
+  top: 20%;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.home__heading {
+  padding: 10px 50px;
 }
