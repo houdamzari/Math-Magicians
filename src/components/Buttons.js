@@ -7,7 +7,7 @@ class Buttons extends React.PureComponent {
     const { state, buttonClicked } = this.props;
     const { total, next, operation } = state;
     return (
-      <>
+      <div className="calculator">
         <div className="results">
           {total}
           {operation}
@@ -73,7 +73,7 @@ class Buttons extends React.PureComponent {
             =
           </button>
         </div>
-      </>
+      </div>
     );
   }
 }
