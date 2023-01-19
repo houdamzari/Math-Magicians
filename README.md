@@ -119,6 +119,12 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Run tests <a name="runtests"></a>
+
+- npm install react-test-renderer --save-dev
+- npm install --save-dev @testing-library/react
+- npm run test
+
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
