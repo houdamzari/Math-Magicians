@@ -1,18 +1,31 @@
 import React from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
+
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import NavBar from './components/NavBar';
 
 const App = () => (
   <>
+    <nav className="navbar">
+      <h1>Math Magicians</h1>
+      <ul className="nav__list">
+        <li className="nav__item">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/calculator">Calculator</Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/quote">Quote</Link>
+        </li>
+      </ul>
+    </nav>
+
     <Routes>
       <Route
         path="/"
         element={(
           <>
-            <NavBar />
-
             <h1 className="home__heading">Welcome to our page</h1>
             <p className="home__paragraph">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
@@ -32,7 +45,6 @@ const App = () => (
         path="/quote"
         element={(
           <>
-            <NavBar />
             <p className="quote__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ab
               possimus atque nulla excepturi impedit! Ipsam ipsa saepe, ut illo
@@ -42,7 +54,6 @@ const App = () => (
         )}
       />
     </Routes>
-
   </>
 );
 
